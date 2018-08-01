@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    >
+
+
+    <LinearLayout
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimary"></View>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/timeline_green"
+            />
+
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimary"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/timeline_content"
+        android:padding="20dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的快件已经到达北京"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_zone"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-11-12"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
